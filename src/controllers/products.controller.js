@@ -15,11 +15,13 @@ async function getProduct(id) {
       product = await fileProductsApi.list(id);
 
 //Modificar para mongoDB
+
         res.render("partials/bodyProducts", {
           datos: datosUsuario,
           products: product,
         });
     }
+
 //Modificar para mongoDB
     return { datosUsuario: datosUsuario, product: product };
   } catch (error) {
@@ -97,10 +99,12 @@ class ProductsController {
       const { datosUsuario, product } = response;
 
 //modificar para mogoDB
-      res.render("partials/bodyProducts", {
-        datos: datosUsuario,
-        products: product,
-      });
+
+      // res.render("partials/bodyProducts", {
+      //   datos: datosUsuario,
+      //   products: product,
+      // });
+
 //modificar para mogoDB
 
       res.sendStatus(200);
