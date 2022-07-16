@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "timestamp": "Wed Feb 16 2022 11:08:33 GMT-0300 (hora estándar de Chile)",
+    "products": [
+      {
+        "id": 1,
+        "name": "Ferocactus Mix",
+        "timestamp": "13:44",
+        "description": "Semillas de cactus. semillas importadas de alemania. porcentaje de germinibilidad 90%(comprobado en laboratorio)",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/proyecto-react-semillas.appspot.com/o/ferocactus1.jpg?alt=media&token=f0d77ad1-5d51-49f3-81be-b1383c5b9574",
+        "price": 5990,
+        "stock": 100
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": "Wed Feb 16 2022 11:08:34 GMT-0300 (hora estándar de Chile)",
+    "products": [
+      {
+        "id": 2,
+        "timestamp": "13:47",
+        "name": "Fenestraria",
+        "description": "Semillas de cactus. semillas importadas de alemania. porcentaje de germinibilidad 90%(comprobado en laboratorio)",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/proyecto-react-semillas.appspot.com/o/fenestraria-aurantiaca6.jpg?alt=media&token=5d2d0f8e-9447-44dc-9c12-a020fc177bc6",
+        "price": 5990,
+        "stock": 100
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "Wed Feb 16 2022 11:08:35 GMT-0300 (hora estándar de Chile)",
+    "products": [
+      {
+        "id": 3,
+        "timestamp": "Wed Feb 16 2022 12:19:32 GMT-0300 (hora estándar de Chile)",
+        "name": "Crassula",
+        "description": "Semillas de cactus. semillas importadas de alemania. porcentaje de germinibilidad 90%(comprobado en laboratorio)",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/proyecto-react-semillas.appspot.com/o/crassula-hybr-buddhas-temple.jpg?alt=media&token=21f97bcd-42e9-4203-95a4-7032338827cf",
+        "price": 5990,
+        "stock": 100
+      }
+    ]
+  }
+]

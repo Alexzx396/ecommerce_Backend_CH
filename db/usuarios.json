@@ -1,0 +1,22 @@
+[
+    { 
+      "name": "Alex Arce",
+      "password": "123",
+      "address": "Pueblo Paleta 388",
+      "email": "a.l.e.x_91@hotmail.com",
+      "thumbnail":"https://firebasestorage.googleapis.com/v0/b/proyecto-react-semillas.appspot.com/o/crassula-hybr-buddhas-temple.jpg?alt=media&token=21f97bcd-42e9-4203-95a4-7032338827cf",
+      "age": 30,
+      "phone": 56986642616
+    },
+    {
+      "name": "Paul Becerra",
+      "password": "123",
+      "address": "Bernardo 388",
+      "email": "alex_weno91@hotmail.com",
+      "age": 40,
+      "thumbnail":"https://firebasestorage.googleapis.com/v0/b/proyecto-react-semillas.appspot.com/o/crassula-hybr-buddhas-temple.jpg?alt=media&token=21f97bcd-42e9-4203-95a4-7032338827cf",
+      "phone": 10010077
+    }
+
+]
+

@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "timestamp": 1645042308758,
+      "products": [
+        {
+          "timestamp": 1645033625229,
+          "name": "nombreProducto 1",
+          "description": "alguna descripsion",
+          "code": "150214571",
+          "thumbnail":  "https://firebasestorage.googleapis.com/v0/b/proyecto-react-semillas.appspot.com/o/fenestraria-aurantiaca6.jpg?alt=media&token=5d2d0f8e-9447-44dc-9c12-a020fc177bc6",
+          "price": "200",
+          "stock": "2",
+          "id": 1
+        },
+        {
+          "timestamp": 2645040299948,
+          "name": "nombreProducto 2",
+          "description": "alguna descripsion 2",
+          "code": "200214571",
+          "thumbnail": "img2",
+          "price": "10",
+          "stock": "62",
+          "id": 3
+        },
+        {
+          "timestamp": 3645033625229,
+          "name": "nombreProducto 3",
+          "description": "alguna descripsion 3",
+          "code": "300214571",
+          "thumbnail": "img3",
+          "price": "1020",
+          "stock": "52",
+          "id": 4
+        },
+        {
+          "timestamp": 3645033625229,
+          "name": "nombreProducto 4",
+          "description": "alguna descripsion 4",
+          "code": "400214571",
+          "thumbnail": "img4",
+          "price": "1050",
+          "stock": "12",
+          "id": 5
+        }
+      ]
+    }
+  ]
