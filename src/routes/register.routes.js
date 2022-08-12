@@ -18,7 +18,7 @@ const storage = multert.diskStorage({
 const upload = multert({ storage: storage });
 
 /* -------------------------------- Instancia de Express ------------------------ */
-//const sendMail = new ContainerSendMail();
+// const sendMail = new ContainerSendMail();
 /* -------------------------------- Rutas -------------------------------- */
 // https://www.iconfinder.com/free_icons
 

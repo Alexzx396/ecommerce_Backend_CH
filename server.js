@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 /* -------------------------------- Motor de plantillas -------------------------------- */
 app.set('views', path.join(__dirname, 'views'));
+
 //Config extra para lo que es HBS
 app.engine('hbs', exphbs.engine({
   defaultLayout: 'main',
@@ -37,7 +38,6 @@ const MODO_CLUSTER = process.argv[2] == 'CLUSTER'
 
 if (MODO_CLUSTER && cluster.isMaster) {
   logger.info(`num cpus: ${numCPUs}`);
-
   for (let index = 0; index < numCPUs; index++) {
       cluster.fork();
   }
@@ -48,39 +48,42 @@ if (MODO_CLUSTER && cluster.isMaster) {
   });
 } else {
   // console.log('Proceso hijo')
-  //const PORT = parseInt(process.argv[2]) || 8080;
-  const PORT = 8080;
+  const PORT = parseInt(process.argv[2]) || 8080;
+  // const PORT = 8080;
 
   const server = app.listen(PORT, () => {
-    logger.info(`Server is running on port ${PORT} - PID WORKER ${process.pid}`);
+    logger.info(`Server running on express, Home can see it on http://localhost:${PORT} - PID WORKER ${process.pid} 
+    - Date ${new Date().toLocaleString()}`);
   });
-
-  server.on("error", (err) => {
+    server.on("error", (err) => {
     logger.warn(`Error en el servidor: ${err}`);
   });
+
 }
 
 /* -------------------------------- Rutas -------------------------------- */
 /* Agregamos routers a la app */
+
 app.use("/api/productos", (new ProductsRouter()).start());
 app.use("/api/carrito", (new CartRouter()).start());
+
 //modifique las carpetas de api
 app.use("/register", (new RegisterRouter()).start());
 app.use("/login", (new LoginRouter()).start());
 
-//Ruta inicio
-// app.get("/", (req, res) => {
-//   res.render('pages/login');
-// });
+// Ruta inicio
+app.get("/", (req, res) => {
+  res.render('pages/login');
+});
 
 /* -------------------------- FORK ---------------------------- */
-//node server.js FORK
-//npm start FORK
-//artillery quick -c 50 -n 50 "http://localhost:8080/api/productos" > artillery_fork.txt
+// node server.js FORK
+// npm start FORK
+// artillery quick -c 50 -n 50 "http://localhost:8080/api/productos" > artillery_fork.txt
 /* ----------------------------------------------------------- */
 
-/* -------------------------- CLUSTER ---------------------------- */
-//node server.js CLUSTER
-//npm start CLUSTER
-//artillery quick -c 50 -n 50 "http://localhost:8080/api/productos" > artillery_cluster.txt
-/* ----------------------------------------------------------- */
+// /* -------------------------- CLUSTER ---------------------------- */
+// node server.js CLUSTER
+// npm start CLUSTER
+// artillery quick -c 50 -n 50 "http://localhost:8080/productos" > artillery_cluster.txt
+// /* ----------------------------------------------------------- */

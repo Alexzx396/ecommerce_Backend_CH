@@ -39,10 +39,10 @@ async function addUser(body, file) {
     sendMail.enviarCorreo(`EMAIL: ${usuario.email} \n NOMBRE: ${usuario.name}`);
 
     return response;
-    //res.status(200).json(response);
+    // res.status(200).json(response);
     // res.redirect("/login");
   } catch (error) {
-    //res.status(404).json({ msg: `Error al agregar Usuario: ${error}` });
+    res.status(404).json({ msg: `Error al agregar Usuario: ${error}` });
     logger.warn(`Error al agregar usuario ${error}`);
     return false;
     // res.render("pages/register-err");
@@ -76,7 +76,7 @@ class RegisterController {
   }
 
   getUserRegister =  async (req, res) => {
-    //res.render("pages/register");
+    res.render("pages/register");
     const { id } = req.params;
     const usuario = await getUser(id);
   
@@ -106,7 +106,7 @@ class RegisterController {
         res.render("pages/register-err");
       }
     } catch (error) {
-      //res.status(404).json({ msg: `Error al agregar Usuario: ${error}` });
+      res.status(404).json({ msg: `Error al agregar Usuario: ${error}` });
       logger.warn(`Error al agregar usuario ${error}`);
       res.render("pages/register-err");
     }

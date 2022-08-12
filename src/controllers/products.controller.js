@@ -100,10 +100,10 @@ class ProductsController {
 
 //modificar para mogoDB
 
-      // res.render("partials/bodyProducts", {
-      //   datos: datosUsuario,
-      //   products: product,
-      // });
+      res.render("partials/bodyProducts", {
+        datos: datosUsuario,
+        products: product,
+      });
 
 //modificar para mogoDB
 

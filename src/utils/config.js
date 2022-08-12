@@ -11,12 +11,12 @@ const config = {
             serverSelectionTimeoutMS: 5000
         }
     },
-    // firebase: {
-    //     rutaCert: '../../db/./certificado.json',
-    // },
-    // filedb: {
-    //     pathdb: './DB'
-    // },
+    firebase: {
+        rutaCert: '../../db/./certificado.json',
+    },
+    filedb: {
+        pathdb: './DB'
+    },
     srv: {
         port: process.env.PORT,
         logger: process.env.NODE_ENV || 'DEV',

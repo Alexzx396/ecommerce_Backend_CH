@@ -6,13 +6,16 @@ function buildProdLogger() {
   const prodLogger = winston.createLogger({
     transports: [
       new winston.transports.File({
-        filename: path.join(path.dirname(""), "./logs/debug.log"),
-        level: "debug",
+        filename: path.join(path.dirname(""), "/logs/warn.log"),
+        level: "warn",
       }),
       new winston.transports.File({
-        filename: path.join(path.dirname(""), "./logs/error.log"),
+        filename: path.join(path.dirname(""), "/logs/error.log"),
         level: "error",
       }),
+      new winston.transports.Console({
+        format: winston.format.combine(winston.format.colorize(), winston.format.simple())
+      })
     ],
   });
   return prodLogger;
