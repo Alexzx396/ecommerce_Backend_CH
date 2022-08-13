@@ -46,10 +46,10 @@ Desarrollar aplicaciones modernas con Node.js y MongoDB - Programar en Javascrip
 <img src="./public/img_readme/node2.png" alt="My cool logo"/>
 --> Productos
 <img src="./public/img_readme/node3.png" alt="My cool logo"/>
---> Carro de compras
-<img src="./public/img_readme/node4.png" alt="My cool logo"/>
---> mongo DB
-<img src="./public/img_readme/mongo1.png" alt="My cool logo"/>
+--> Productos
+<img src="./public/img_readme/node6.png" alt="My cool logo"/>
+--> Carro De compras
+<img src="./public/img_readme/node7.png" alt="My cool logo"/>
 --> mongo DB
 <img src="./public/img_readme/mongo2.png" alt="My cool logo"/>
 
